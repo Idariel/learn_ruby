@@ -9,5 +9,12 @@ def repeat(string,nb=2)
   result.rstrip
 end
 def start_of_word(string,nb=1)
-    string[nb-1]
+    string[0,nb]
+end
+def first_word(sentence)
+  sentence.partition(" ").first
+end
+def titleize(words)
+  words.partition(" ").capitalize
+  # words.split.map(&:capitalize).join(' ')
 end
