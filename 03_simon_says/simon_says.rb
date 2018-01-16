@@ -15,6 +15,8 @@ def first_word(sentence)
   sentence.partition(" ").first
 end
 def titleize(words)
-  words.partition(" ").capitalize
+  words.split(' ').first.capitalize
+  words.split(' ').last.capitalize
+  words
   # words.split.map(&:capitalize).join(' ')
 end
